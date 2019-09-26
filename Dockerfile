@@ -1,4 +1,4 @@
-FROM anand000/docker-aws-cli
+FROM thinkwrap/docker-aws-cli
 
 # Get - Terraform
 RUN \
