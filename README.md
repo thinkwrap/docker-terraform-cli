@@ -1,15 +1,15 @@
 # Terraform Docker Container
 
-This is a *containerized* Terraform CLI based on `anand000/docker-aws-cli` that also sets up for use with Terraform Cloud (via `.terraformrc`).
+This is a *containerized* Terraform CLI based on `thinkwrap/docker-aws-cli` that also sets up for use with Terraform Cloud (via `.terraformrc`).
 
 > This container includes the AWS CLI.
 
-[![DockerHub Badge](http://dockeri.co/image/anand000/docker-terraform-cli)](https://hub.docker.com/r/anand000/docker-terraform-cli/)
+[![DockerHub Badge](http://dockeri.co/image/thinkwrap/docker-terraform-cli)](https://hub.docker.com/r/thinkwrap/docker-terraform-cli/)
 
 ## Example build
 
 ```
-docker build -t anand000/docker-terraform-cli .
+docker build -t thinkwrap/docker-terraform-cli .
 ```
 
 ## Example usage
@@ -34,7 +34,7 @@ docker run --name docker-terraform-cli \
     --env "AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}" \
     --env "AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}" \
     --env "AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION}" \
-    anand000/docker-terraform-cli
+    thinkwrap/docker-terraform-cli
 ```
 
 **Run a command**
