@@ -16,7 +16,8 @@ RUN \
     && curl -o /tmp/terraform.zip $TERRAFORM_CURRENT_BIN_URL \
     && echo "$TERRAFORM_CHECKSUM  /tmp/terraform.zip" | sha256sum -c - \
     && unzip /tmp/terraform.zip -d /usr/local/bin \
-    && rm /tmp/terraform.zip
+    && rm /tmp/terraform.zip \
+    && echo Installed $TERRAFORM_CURRENT_BIN from $TERRAFORM_CURRENT_BIN_URL
 
 # Config - Terraform
 ENV TF_DATA_DIR "/root/.terraform"
