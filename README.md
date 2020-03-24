@@ -55,4 +55,3 @@ docker exec -it docker-terraform-cli terraform --version
 Licensed under the Apache License, Version 2.0 (the "License").
 
 This repository and its contents are licensed under the terms detailed in the [LICENSE file](./LICENSE).
-
